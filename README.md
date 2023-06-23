@@ -1,6 +1,6 @@
 # dbdiagram_highlight_vscode
 
-create a dbdiagram highlight for vscode
+## create a dbdiagram highlight for vscode
 
 # Install instruction
 
