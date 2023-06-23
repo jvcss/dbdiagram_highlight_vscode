@@ -1,0 +1,32 @@
+{
+    "name": "dbdiagram-language",
+    "displayName": "dbdiagram",
+    "version": "1.0.0",
+    "description": "Language support for dbdiagram",
+    "engines": {
+      "vscode": "^1.60.0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/your-username/your-repo.git"
+    },
+    "categories": ["Language Packs"],
+    "contributes": {
+      "languages": [
+        {
+          "id": "dbdiagram",
+          "aliases": ["dbdiagram"],
+          "extensions": [".dbdiagram"],
+          "configuration": "./language-configuration.json"
+        }
+      ],
+      "grammars": [
+        {
+          "language": "dbdiagram",
+          "scopeName": "source.dbdiagram",
+          "path": "./dbdiagram.tmLanguage.json"
+        }
+      ]
+    }
+  }
+  
