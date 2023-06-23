@@ -1,0 +1,46 @@
+{
+    "name": "dbdiagram",
+    "scopeName": "source.dbdiagram",
+    "fileTypes": ["dbdiagram"],
+    "patterns": [
+      {
+        "include": "#table"
+      },
+      {
+        "include": "#comment"
+      }
+    ],
+    "repository": {
+      "table": {
+        "begin": "\\bTable\\b",
+        "end": ";",
+        "patterns": [
+          {
+            "include": "#tableName"
+          },
+          {
+            "include": "#fields"
+          }
+        ]
+      },
+      "tableName": {
+        "match": "\\b[A-Za-z_][A-Za-z0-9_]*\\b"
+      },
+      "fields": {
+        "begin": "\\{",
+        "end": "\\}",
+        "patterns": [
+          {
+            "include": "#field"
+          }
+        ]
+      },
+      "field": {
+        "match": "\\b[A-Za-z_][A-Za-z0-9_]*\\b"
+      },
+      "comment": {
+        "match": "--.*$"
+      }
+    }
+  }
+  
