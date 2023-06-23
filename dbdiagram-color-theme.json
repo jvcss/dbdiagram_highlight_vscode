@@ -1,0 +1,7 @@
+{
+    "name": "Keyword Color",
+    "scope": "keyword.color.scope",
+    "settings": {
+      "foreground": "#3b82f6"
+    }
+}
